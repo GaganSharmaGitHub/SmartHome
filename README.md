@@ -14,13 +14,14 @@ device:"string value of device id"
 * Connect PIN 1,2,3 and 4 of your module to the devices you want to control.
 * Your own SmartHome should be up and running as soon as you plug your module to power. 
 #### Screenshot
-Your SmartHome App
+##### Your SmartHome App
 ![Screenshot PC](/screenshots/desktopSmartHome.PNG)
-SmartHome Web on moblie:
+##### SmartHome Web on moblie:
 ![Screenshot Mobile](/screenshots/smarthome.PNG)
-SmartHome connecting....:
+
+##### SmartHome connecting....:
 ![Screenshot connecting](/screenshots/connecting.PNG)
-SmartHome connection fails:
+##### SmartHome connection fails:
 ![Screenshot fail](/screenshots/fail.PNG)
 
 ## Happy Hacking!
