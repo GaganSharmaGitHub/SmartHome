@@ -15,12 +15,12 @@ device:"string value of device id"
 * Your own SmartHome should be up and running as soon as you plug your module to power. 
 #### Screenshot
 Your SmartHome App
-![Screenshot PC](/screenshots/desktopSmartHome.png)
+![Screenshot PC](/screenshots/desktopSmartHome.PNG)
 SmartHome Web on moblie:
-![Screenshot PC](/screenshots/SmartHome.png)
+![Screenshot PC](/screenshots/SmartHome.PNG)
 SmartHome connecting....:
-![Screenshot PC](/screenshots/connecting.png)
+![Screenshot PC](/screenshots/connecting.PNG)
 SmartHome connection fails:
-![Screenshot PC](/screenshots/fail.png)
+![Screenshot PC](/screenshots/fail.PNG)
 
 ## Happy Hacking!
