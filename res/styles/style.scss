@@ -1,0 +1,230 @@
+$themeColor1:#FC4445;
+$themeColor2:#3feee6;
+$themeColor3:#0060f0;
+$themeColor4:#646464;
+$themeColor5:#181818;
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg#logoIm{
+        height: 100px;
+         .svgColor1 {
+            fill: $themeColor3;
+        }
+        .svgColor2{
+            fill:$themeColor1;
+        }
+        #gear{
+          fill:$themeColor2;
+        }
+        #cir1,#cir2{
+            fill: $themeColor4;
+        }
+      g#toBeanimated{
+        animation: spin 2s ease;
+        transform-origin: center;
+        transform-box: fill-box;
+      }
+    }
+}
+@keyframes spin{
+  0%{
+    transform: rotateZ(0deg);
+  }
+  20%{
+    transform: rotateZ(-30deg);
+  }
+  100%{
+    transform: rotateZ(359deg);
+  }
+}
+section.mainContent{
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    #controls{
+        grid-row: 1/3;
+        grid-column: 2/3;
+        
+        #controlTab{display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        label{
+            margin: 5px;
+        }}
+    }
+    div.dataBlock{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+}
+
+#statusBlock{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  .doorStatus{
+    display: flex;
+  }
+.doorSVG{
+ height: 100px;
+ width: 100px;
+  .doorColor1{
+    fill: $themeColor2;
+  }
+  
+  .doorColor2{
+    fill: $themeColor3;
+  }
+  
+  .doorColor3{
+    fill: $themeColor2;
+  }
+}
+.textContStat{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+.temp {
+  
+    display: flex;
+  
+.tempSVG{
+  width: 100px;
+  height: 100px;}
+}}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: $themeColor1;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  $colors: $themeColor1,$themeColor2,$themeColor3,$themeColor4,;
+$bob-distance: 73%;
+.animatedConnect{
+    width: 100%;
+    height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+.dot {
+  animation: bob 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+  border-radius: 100%;
+  float: left;
+  height: 1.5rem;
+  width: 1.5rem;
+  transform: translateY(-$bob-distance);
+  
+  &:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+  
+  @for $i from 1 through 4 {
+    &:nth-child(#{$i}) {
+      $color: nth($colors, $i);
+      animation-delay: $i * 0.15s;
+      background-color: $color;
+    }
+  }
+}
+
+@keyframes bob {
+  0% {
+    transform: translateY(-$bob-distance);
+  }
+  
+  50% {
+    transform: translateY($bob-distance);
+  }
+  
+  100% {
+    transform: translateY(-$bob-distance);
+  }
+}
+}
+
+#failToConnect, .connectedSVG{
+  height: 100px;
+  display: none;
+}
+@media screen and (max-width: 700px){
+  section.mainContent{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+  }
+}
