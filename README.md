@@ -17,10 +17,10 @@ device:"string value of device id"
 Your SmartHome App
 ![Screenshot PC](/screenshots/desktopSmartHome.PNG)
 SmartHome Web on moblie:
-![Screenshot PC](/screenshots/SmartHome.PNG)
+![Screenshot Mobile](/screenshots/smarthome.PNG)
 SmartHome connecting....:
-![Screenshot PC](/screenshots/connecting.PNG)
+![Screenshot connecting](/screenshots/connecting.PNG)
 SmartHome connection fails:
-![Screenshot PC](/screenshots/fail.PNG)
+![Screenshot fail](/screenshots/fail.PNG)
 
 ## Happy Hacking!
